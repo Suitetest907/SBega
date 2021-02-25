@@ -1,0 +1,49 @@
+div.icc-activesales-dashlet {
+  max-height: none !important;
+  text-align: center;
+  margin: 0 -5px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    /*float: left;*/
+    display: inline-block;
+    width: 21%;
+    min-width: 200px;
+    padding: 20px;
+    .card {
+      height: 130px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+      &:hover{
+        box-shadow: none;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 15px;
+        overflow-x: hidden;
+        white-space: nowrap;
+      }
+      .fa {
+        font-size: 40px;
+        width: auto;
+      }
+      .badge-top {
+        margin-top: 105px;
+        position: absolute;
+        display: block;
+        padding: 4px 8px;
+        font-size: 12px;
+        text-align: center;
+        background-color: rgba(29, 29, 29, 0.1);
+        z-index: 2;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,89 @@
+<pre>&nbsp;</pre>
+<table style="width: 100%;">
+<tbody>
+<tr style="font-size: 10pt; font-weight: normal;">
+<td colspan="4" align="center"><strong>Wochenbericht Au&szlig;endienst <span style="color: #979797;">f&uuml;r Mitarbeiter:</span> {if count($meetings) &gt; 0}{$meetings[0].full_name}{/if}, <span style="color: #979797;">KW: {$week_number}</span> ({$week_start_date} - {$week_end_date})</strong></td>
+</tr>
+<tr>
+<td style="font-size: 4pt; border-bottom: 1px dashed #979797;" colspan="4">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align: center; font-size: 8pt;" colspan="4" align="center">{foreach from=$meetings_count item="meeting_count"}
+<table style="color: #979797; font-size: 9pt;">
+<tbody>
+<tr style="text-align: left;">
+<td width="20%">&nbsp;</td>
+<td><span style="color: #979797;"><strong>Anzahl Besuche({$meeting_count.total_count})</strong></span></td>
+<td><span style="color: #979797;">Kunden({$meeting_count.Customer})</span></td>
+<td><span style="color: #979797;">Beleucht. Pln({$meeting_count.Planer})</span></td>
+<td><span style="color: #979797;">Ingenieure({$meeting_count.Ingenieure})</span></td>
+<td width="20%">&nbsp;</td>
+</tr>
+<tr style="text-align: left;">
+<td width="20%">&nbsp;</td>
+<td><span style="color: #979797;">Architekten ({$meeting_count.Architekt})</span></td>
+<td><span style="color: #979797;">Beh&ouml;rden ({$meeting_count.Regierung})</span></td>
+<td><span style="color: #979797;">Installateure ({$meeting_count.Installateure})</span></td>
+<td><span style="color: #979797;">Sonstige ({$meeting_count.Sonstige})</span></td>
+<td width="20%">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+{/foreach}</td>
+</tr>
+</tbody>
+</table>
+<div>&nbsp;</div>
+<table style="width: 100%;" cellspacing="0" cellpadding="4">
+<tbody>
+<tr style="font-size: 10pt; font-weight: bold;">
+<td style="width: 15%; border-top: 1px solid black; border-bottom: 1px solid black;">Tag</td>
+<td style="width: 20%; border-top: 1px solid black; border-bottom: 1px solid black;">Partner</td>
+<td style="width: 20%; border-top: 1px solid black; border-bottom: 1px solid black;">Projekt</td>
+<td style="width: 45%; border-top: 1px solid black; border-bottom: 1px solid black;">Betreff / Aktivit&auml;t</td>
+</tr>
+</tbody>
+</table>
+<div style="font-size: 1px;">{foreach from=$meetings item="meeting"}</div>
+<table style="width: 100%;" cellspacing="0" cellpadding="4">
+<tbody>
+<tr style="font-size: 9pt;">
+<td style="width: 15%;">{$meeting.date_start|date_format:"%d.%m.%Y"}</td>
+<td style="width: 20%;">{if !empty($meeting.projekte_icc_address_street)}{$meeting.projekte_icc_address_street}. {/if}{if !empty($meeting.projekte_icc_address_house_number)}{$meeting.projekte_icc_address_house_number}<br />{/if} {if !empty($meeting.projekte_icc_address_postalcode)}{$meeting.projekte_icc_address_postalcode}<br />{/if} {if !empty($meeting.projekte_icc_address_city)}{$meeting.projekte_icc_address_city}<br />{/if} {if !empty($meeting.projekte_icc_address_country)}{$meeting.projekte_icc_address_country}{/if}</td>
+<td style="width: 20%;">{$meeting.projekte_name}</td>
+<td style="width: 45%;"><a href="{$site_url}/#Meetings/{$meeting.id}">{$meeting.name}</a></td>
+</tr>
+<tr>
+<td style="border-bottom: 1px dashed #979797;" colspan="4">&nbsp;</td>
+</tr>
+<tr style="font-size: 9pt;">
+<td style="width: 15%;">&nbsp;</td>
+<td style="width: 85%;" colspan="3">{$meeting.description}</td>
+</tr>
+<tr style="width: 100%;">
+<td colspan="4">
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+<td style="width: 15%;">&nbsp;</td>
+<td style="width: 20%;">{if !empty($meeting.icc_image1)}<img src="{$meeting.icc_image1|icc_meeting_image_path}" alt="" width="100" />{else}&nbsp;{/if}</td>
+<td style="width: 20%;">{if !empty($meeting.icc_image1)}<img src="{$meeting.icc_image2|icc_meeting_image_path}" alt="" width="100" />{else}&nbsp;{/if}</td>
+<td style="width: 20%;">{if !empty($meeting.icc_image1)}<img src="{$meeting.icc_image3|icc_meeting_image_path}" alt="" width="100" />{else}&nbsp;{/if}</td>
+<td style="width: 25%;">{if !empty($meeting.icc_image1)}<img src="{$meeting.icc_image4|icc_meeting_image_path}" alt="" width="100" />{else}&nbsp;{/if}</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="border-top: 1.5px solid #000000;">
+<div style="border-bottom: 1.5px solid #000000; font-size: 2px;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="font-size: 1px;">{/foreach}</div>

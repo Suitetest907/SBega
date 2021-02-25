@@ -1,0 +1,29 @@
+<?php
+ // created: 2020-07-01 14:55:11
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['required']=false;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['name']='icc_product_image';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['vname']='LBL_ICC_PRODUCT_IMAGE';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['type']='image';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['massupdate']=false;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['no_default']=false;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['comments']='';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['help']='';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['importable']='true';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['duplicate_merge']='enabled';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['duplicate_merge_dom_value']=1;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['audited']=false;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['reportable']=true;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['unified_search']=false;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['merge_filter']='disabled';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['pii']=false;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['calculated']=false;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['len']=255;
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['size']='20';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['studio']='visible';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['dbType']='varchar';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['border']='';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['width']='150';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['height']='150';
+$dictionary['RevenueLineItem']['fields']['icc_product_image']['icc_is_studio_plus']=true;
+
+ ?>

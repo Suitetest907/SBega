@@ -1,0 +1,83 @@
+<pre>&nbsp;</pre>
+<table style="width: 100%;">
+<tbody>
+<tr style="width: 100%; font-size: 14pt; font-weight: normal;">
+<td colspan="4" align="center"><strong>Wochenbericht Au&szlig;endienst f&uuml;r Mitarbeiter:</strong> {$meeting.full_name}</td>
+</tr>
+<tr style="width: 100%;">
+<td colspan="4" width="200%">
+<div style="font-size: 13pt; height: 3px; color: #999;">....................................................................................................................................................................................................................</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div>&nbsp;</div>
+<table style="width: 250%;" cellpadding="4">
+<tbody>
+<tr style="font-size: 0.1pt;">
+<td style="background-color: black;" colspan="4" width="50%">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr style="font-size: 13pt; font-weight: bold;">
+<td style="width: 25%;">Tag</td>
+<td style="width: 25%;">Partner</td>
+<td style="width: 25%;">Objket</td>
+<td style="width: 25%;">Betref/Aktivitat</td>
+</tr>
+<tr style="font-size: 0.1pt;">
+<td style="background-color: black;" colspan="4" width="50%">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div>{foreach from=$meetings item="meeting"}</div>
+<table style="width: 250%;" cellpadding="4">
+<tbody>
+<tr>
+<td colspan="5">&nbsp;</td>
+</tr>
+<tr style="width: 200%; font-size: 12pt;">
+<td style="width: 25%;">{$meeting.project_estimated_start_date}</td>
+<td style="width: 25%;">{$meeting.location}</td>
+<td style="width: 25%;">{$meeting.project_name}</td>
+<td style="width: 25%;">{$meeting.name}</td>
+<td style="width: 25%;">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="5" width="200%">
+<div style="color: #999; font-size: 13pt; height: 3px;">....................................................................................................................................................................................................................</div>
+</td>
+</tr>
+<tr style="font-size: 12pt;">
+<td width="25%">&nbsp;</td>
+<td colspan="4" width="75%">{$meeting.description}</td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;</td>
+</tr>
+<tr style="width: 200%;">
+<td colspan="5">
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+<td width="25%">&nbsp;</td>
+<td width="25%"><img src="{$meeting.icc_image1|icc_meeting_image_path}" alt="" width="200" /></td>
+<td width="25%"><img src="{$meeting.icc_image2|icc_meeting_image_path}" alt="" width="200" /></td>
+<td width="25%"><img src="{$meeting.icc_image3|icc_meeting_image_path}" alt="" width="200" /></td>
+<td width="25%"><img src="{$meeting.icc_image4|icc_meeting_image_path}" alt="" width="200" /></td>
+</tr>
+<tr>
+<td colspan="5" width="200%">
+<div style="font-size: 20pt; height: 3px;">_____________________________________________________________________</div>
+</td>
+</tr>
+<tr>
+<td colspan="5" width="200%">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div>{/foreach}</div>

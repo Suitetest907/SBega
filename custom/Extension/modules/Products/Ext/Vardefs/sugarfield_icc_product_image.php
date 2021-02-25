@@ -1,0 +1,29 @@
+<?php
+ // created: 2020-07-01 13:22:01
+$dictionary['Product']['fields']['icc_product_image']['required']=false;
+$dictionary['Product']['fields']['icc_product_image']['name']='icc_product_image';
+$dictionary['Product']['fields']['icc_product_image']['vname']='LBL_ICC_PRODUCT_IMAGE';
+$dictionary['Product']['fields']['icc_product_image']['type']='image';
+$dictionary['Product']['fields']['icc_product_image']['massupdate']=false;
+$dictionary['Product']['fields']['icc_product_image']['no_default']=false;
+$dictionary['Product']['fields']['icc_product_image']['comments']='';
+$dictionary['Product']['fields']['icc_product_image']['help']='';
+$dictionary['Product']['fields']['icc_product_image']['importable']='true';
+$dictionary['Product']['fields']['icc_product_image']['duplicate_merge']='enabled';
+$dictionary['Product']['fields']['icc_product_image']['duplicate_merge_dom_value']=1;
+$dictionary['Product']['fields']['icc_product_image']['audited']=false;
+$dictionary['Product']['fields']['icc_product_image']['reportable']=true;
+$dictionary['Product']['fields']['icc_product_image']['unified_search']=false;
+$dictionary['Product']['fields']['icc_product_image']['merge_filter']='disabled';
+$dictionary['Product']['fields']['icc_product_image']['pii']=false;
+$dictionary['Product']['fields']['icc_product_image']['calculated']=false;
+$dictionary['Product']['fields']['icc_product_image']['len']=255;
+$dictionary['Product']['fields']['icc_product_image']['size']='20';
+$dictionary['Product']['fields']['icc_product_image']['studio']='visible';
+$dictionary['Product']['fields']['icc_product_image']['dbType']='varchar';
+$dictionary['Product']['fields']['icc_product_image']['border']='';
+$dictionary['Product']['fields']['icc_product_image']['width']='120';
+$dictionary['Product']['fields']['icc_product_image']['height']='120';
+$dictionary['Product']['fields']['icc_product_image']['icc_is_studio_plus']=true;
+
+ ?>
